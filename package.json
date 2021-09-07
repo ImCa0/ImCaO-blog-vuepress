@@ -1,0 +1,17 @@
+{
+  "name": "imcao_blog",
+  "version": "1.0.0",
+  "author": "reco_luan",
+  "scripts": {
+    "dev": "vuepress dev . --host \"0.0.0.0\"",
+    "build": "vuepress build ."
+  },
+  "devDependencies": {
+    "vuepress": "1.7.1",
+    "vuepress-theme-reco": "1.6.6"
+  },
+  "description": "ImCaO_Blog",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3"
+  }
+}

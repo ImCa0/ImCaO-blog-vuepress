@@ -1,0 +1,8 @@
+node_modules/
+yarn.lock
+yarn.error
+
+.vscode
+ROOT
+ROOT_backup
+ROOT.zip
