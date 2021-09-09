@@ -30,6 +30,19 @@ module.exports = {
         src: '/scripts/wakeup.js',
       },
     ],
+    [
+      'script',
+      {
+        async: true,
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-C6MZEQ4XN0',
+      },
+    ],
+    [
+      'script',
+      {
+        src: '/scripts/ga.js',
+      },
+    ],
   ],
   theme: 'reco',
   themeConfig: {
