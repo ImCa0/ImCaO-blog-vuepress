@@ -24,6 +24,12 @@ module.exports = {
         src: '/scripts/baidu.js',
       },
     ],
+    [
+      'script',
+      {
+        src: '/scripts/wakeup.js',
+      },
+    ],
   ],
   theme: 'reco',
   themeConfig: {
