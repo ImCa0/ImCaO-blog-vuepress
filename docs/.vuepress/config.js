@@ -109,8 +109,8 @@ module.exports = {
       {
         title: 'vuepress-theme-reco',
         desc: '一款简洁而优雅的 vuepress 博客 & 文档主题',
-        logo: 'http://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png',
-        link: 'http://vuepress-theme-reco.recoluan.com/',
+        logo: 'https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png',
+        link: 'https://vuepress-theme-reco.recoluan.com/',
       },
       {
         title: '叫我詹躲躲',
