@@ -145,90 +145,90 @@ module.exports = {
         clean: true,
       },
     ],
-    [
-      '@vuepress-reco/vuepress-plugin-bgm-player',
-      {
-        audios: [
-          {
-            name: '云烟成雨',
-            artist: '房东的猫',
-            url: '/bgm/云烟成雨.mp3',
-            cover:
-              'http://p1.music.126.net/DSTg1dR7yKsyGq4IK3NL8A==/109951163046050093.jpg',
-          },
-          {
-            name: '所念皆星河',
-            artist: '房东的猫',
-            url: '/bgm/所念皆星河.mp3',
-            cover:
-              'http://p1.music.126.net/JtevaRk1N7ecpmwZCIvwzQ==/109951165293262893.jpg',
-          },
-          {
-            name: '那些花儿',
-            artist: '房东的猫',
-            url: '/bgm/那些花儿.mp3',
-            cover:
-              'http://p2.music.126.net/LDm-cdbOil0xSMqJj_QXrw==/109951165487371866.jpg',
-          },
-          {
-            name: '月亮鲸鱼',
-            artist: '房东的猫',
-            url: '/bgm/月亮鲸鱼.mp3',
-            cover:
-              'http://p2.music.126.net/cWt6z6bhPPmQKd-qOzThnA==/109951165252977844.jpg',
-          },
-          {
-            name: '下一站，茶山刘',
-            artist: '房东的猫',
-            url: '/bgm/错位时空_艾辰.mp3',
-            cover:
-              'http://p1.music.126.net/eyY36vwg6DWAJpBy9FZngA==/19176582300236529.jpg',
-          },
-          {
-            name: '错位时空',
-            artist: '艾辰',
-            url: '/bgm/错位时空_艾辰.mp3',
-            cover:
-              'http://p2.music.126.net/8C0lwLE88j9ZwLyPQ9a4FA==/109951165595770076.jpg',
-          },
-          {
-            name: '星辰大海',
-            artist: '黄霄雲',
-            url: '/bgm/星辰大海_黄霄雲.mp3',
-            cover:
-              'http://p1.music.126.net/9BgjaSNM9Bmkh5waahv_gQ==/109951165628223126.jpg',
-          },
-          {
-            name: '全世界谁倾听你',
-            artist: '林宥嘉',
-            url: '/bgm/全世界谁倾听你_林宥嘉.mp3',
-            cover:
-              'http://p2.music.126.net/zGgUaGvXapKMy5tfQIB7cw==/109951163167743834.jpg',
-          },
-          {
-            name: '伟大的渺小',
-            artist: '林俊杰',
-            url: '/bgm/伟大的渺小_林俊杰.mp3',
-            cover:
-              'http://p1.music.126.net/ES0-uOdDoGRNAezIPD3tqA==/109951163469681993.jpg',
-          },
-          {
-            name: 'あなたに愛たくて',
-            artist: 'AZU',
-            url: '/bgm/あなたに愛たくて_AZU.mp3',
-            cover:
-              'http://p1.music.126.net/leTr2C6w0mjm36eaLFwoXA==/19074327718902511.jpg',
-          },
-          {
-            name: 'Yesterday Once More',
-            artist: 'Carpenters',
-            url: '/bgm/Yesterday Once More_Carpenters.mp3',
-            cover:
-              'http://p1.music.126.net/oohnKqUgkNEsYJHJDcGmZw==/19000660439857160.jpg',
-          },
-        ],
-        autoShrink: true,
-      },
-    ],
+    // [
+    //   '@vuepress-reco/vuepress-plugin-bgm-player',
+    //   {
+    //     audios: [
+    //       {
+    //         name: '云烟成雨',
+    //         artist: '房东的猫',
+    //         url: '/bgm/云烟成雨.mp3',
+    //         cover:
+    //           'http://p1.music.126.net/DSTg1dR7yKsyGq4IK3NL8A==/109951163046050093.jpg',
+    //       },
+    //       {
+    //         name: '所念皆星河',
+    //         artist: '房东的猫',
+    //         url: '/bgm/所念皆星河.mp3',
+    //         cover:
+    //           'http://p1.music.126.net/JtevaRk1N7ecpmwZCIvwzQ==/109951165293262893.jpg',
+    //       },
+    //       {
+    //         name: '那些花儿',
+    //         artist: '房东的猫',
+    //         url: '/bgm/那些花儿.mp3',
+    //         cover:
+    //           'http://p2.music.126.net/LDm-cdbOil0xSMqJj_QXrw==/109951165487371866.jpg',
+    //       },
+    //       {
+    //         name: '月亮鲸鱼',
+    //         artist: '房东的猫',
+    //         url: '/bgm/月亮鲸鱼.mp3',
+    //         cover:
+    //           'http://p2.music.126.net/cWt6z6bhPPmQKd-qOzThnA==/109951165252977844.jpg',
+    //       },
+    //       {
+    //         name: '下一站，茶山刘',
+    //         artist: '房东的猫',
+    //         url: '/bgm/错位时空_艾辰.mp3',
+    //         cover:
+    //           'http://p1.music.126.net/eyY36vwg6DWAJpBy9FZngA==/19176582300236529.jpg',
+    //       },
+    //       {
+    //         name: '错位时空',
+    //         artist: '艾辰',
+    //         url: '/bgm/错位时空_艾辰.mp3',
+    //         cover:
+    //           'http://p2.music.126.net/8C0lwLE88j9ZwLyPQ9a4FA==/109951165595770076.jpg',
+    //       },
+    //       {
+    //         name: '星辰大海',
+    //         artist: '黄霄雲',
+    //         url: '/bgm/星辰大海_黄霄雲.mp3',
+    //         cover:
+    //           'http://p1.music.126.net/9BgjaSNM9Bmkh5waahv_gQ==/109951165628223126.jpg',
+    //       },
+    //       {
+    //         name: '全世界谁倾听你',
+    //         artist: '林宥嘉',
+    //         url: '/bgm/全世界谁倾听你_林宥嘉.mp3',
+    //         cover:
+    //           'http://p2.music.126.net/zGgUaGvXapKMy5tfQIB7cw==/109951163167743834.jpg',
+    //       },
+    //       {
+    //         name: '伟大的渺小',
+    //         artist: '林俊杰',
+    //         url: '/bgm/伟大的渺小_林俊杰.mp3',
+    //         cover:
+    //           'http://p1.music.126.net/ES0-uOdDoGRNAezIPD3tqA==/109951163469681993.jpg',
+    //       },
+    //       {
+    //         name: 'あなたに愛たくて',
+    //         artist: 'AZU',
+    //         url: '/bgm/あなたに愛たくて_AZU.mp3',
+    //         cover:
+    //           'http://p1.music.126.net/leTr2C6w0mjm36eaLFwoXA==/19074327718902511.jpg',
+    //       },
+    //       {
+    //         name: 'Yesterday Once More',
+    //         artist: 'Carpenters',
+    //         url: '/bgm/Yesterday Once More_Carpenters.mp3',
+    //         cover:
+    //           'http://p1.music.126.net/oohnKqUgkNEsYJHJDcGmZw==/19000660439857160.jpg',
+    //       },
+    //     ],
+    //     autoShrink: true,
+    //   },
+    // ],
   ],
 }
