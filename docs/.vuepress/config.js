@@ -30,19 +30,19 @@ module.exports = {
         src: '/scripts/wakeup.js',
       },
     ],
-    [
-      'script',
-      {
-        async: true,
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-C6MZEQ4XN0',
-      },
-    ],
-    [
-      'script',
-      {
-        src: '/scripts/ga.js',
-      },
-    ],
+    // [
+    //   'script',
+    //   {
+    //     async: true,
+    //     src: 'https://www.googletagmanager.com/gtag/js?id=G-C6MZEQ4XN0',
+    //   },
+    // ],
+    // [
+    //   'script',
+    //   {
+    //     src: '/scripts/ga.js',
+    //   },
+    // ],
   ],
   theme: 'reco',
   themeConfig: {
@@ -106,12 +106,12 @@ module.exports = {
       },
     },
     friendLink: [
-      {
-        title: 'vuepress-theme-reco',
-        desc: '一款简洁而优雅的 vuepress 博客 & 文档主题',
-        logo: 'https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png',
-        link: 'https://vuepress-theme-reco.recoluan.com/',
-      },
+      // {
+      //   title: 'vuepress-theme-reco',
+      //   desc: '一款简洁而优雅的 vuepress 博客 & 文档主题',
+      //   logo: 'https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png',
+      //   link: 'https://vuepress-theme-reco.recoluan.com/',
+      // },
       {
         title: '叫我詹躲躲',
         desc: '岂能尽如人意，但求无愧于心',
