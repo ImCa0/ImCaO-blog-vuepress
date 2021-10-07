@@ -6,7 +6,8 @@ tags:
   - 折腾
 categories:
   - 随笔
-pic: /img/2021/summer.jpg
+abs_img: /img/2021/summer.jpg
+head_img: /img/2021/summer.jpg
 ---
 
 ## 疫情
