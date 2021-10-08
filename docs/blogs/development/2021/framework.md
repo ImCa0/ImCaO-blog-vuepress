@@ -8,13 +8,12 @@ tags:
 categories:
   - 开发
 abs_img: /img/2021/framework.jpg
+head_img: /img/2021/framework.jpg
 ---
 
 ## 总体架构
 
-![总体架构](/img/2021/framework.jpg)
-
-总体架构由底层设备适配层、MQTT 消息传输层、InfluxDB 数据持久层和数据调用 API 四部分构成。
+总体架构如头图所示，由底层设备适配层、MQTT 消息传输层、InfluxDB 数据持久层和数据调用 API 四部分构成。
 
 ## 适配层
 
