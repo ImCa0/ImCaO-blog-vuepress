@@ -66,14 +66,14 @@ module.exports = {
         icon: 'reco-date',
       },
       {
-        text: 'MessageBoard',
-        link: '/blogs/MessageBorad.html',
-        icon: 'reco-suggestion',
-      },
-      {
         text: 'Footprint',
         link: '/blogs/footprint.html',
         icon: 'fas fa-map-marker-alt',
+      },
+      {
+        text: 'MessageBoard',
+        link: '/blogs/MessageBorad.html',
+        icon: 'reco-suggestion',
       },
       {
         text: 'About',
@@ -81,9 +81,21 @@ module.exports = {
         icon: 'reco-account',
       },
       {
-        text: 'Weibo',
-        icon: 'reco-weibo',
-        link: 'https://weibo.com/u/3533869340',
+        text: 'Links',
+        type: 'links',
+        items: [
+          {
+            text: 'Favorites',
+            link: 'https://www.imcao.cn/favorites/',
+            icon: 'reco-document',
+          },
+          {
+            text: 'Weibo',
+            icon: 'reco-weibo',
+            link: 'https://weibo.com/u/3533869340',
+          },
+        ],
+        icon: 'reco-api',
       },
       // {
       //   "text": "Love",
@@ -100,10 +112,10 @@ module.exports = {
         location: 2,
         text: 'Category',
       },
-      tag: {
-        location: 3,
-        text: 'Tag',
-      },
+      // tag: {
+      //   location: 3,
+      //   text: 'Tag',
+      // },
     },
     friendLink: [
       // {
