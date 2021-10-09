@@ -6,4 +6,4 @@
 
 博客主题：[vuepress-theme-reco](http://vuepress-theme-reco.recoluan.com/)
 
-云储存：[LeanCloud](https://www.leancloud.cn/)
+云存储：[LeanCloud](https://www.leancloud.cn/)
