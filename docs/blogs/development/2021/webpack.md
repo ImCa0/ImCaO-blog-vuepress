@@ -33,7 +33,7 @@ npm install webpack webpack-cli -D
 #### 基础配置
 
 ```js
-// ./webpack.config.js
+// webpack.config.js
 const path = require('path')
 
 module.exports = {
@@ -57,7 +57,7 @@ module.exports = {
 #### 配置
 
 ```js
-// ./webpack.config.js
+// webpack.config.js
 module.exports = {
   devtool: 'source-map',
 }
@@ -84,7 +84,7 @@ npm install html-webpack-plugin -D
 #### 配置
 
 ```js
-// ./webpack.config.js
+// webpack.config.js
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
@@ -116,7 +116,7 @@ npm install clean-webpack-plugin -D
 #### 配置
 
 ```js
-// ./webpack.config.js
+// webpack.config.js
 const { CleanWebpackPlugin } = require('html-webpack-plugin')
 
 module.exports = {
@@ -139,16 +139,16 @@ npm install webpack-dev-server -D
 #### 配置
 
 ```json
-// ./package.json
+// package.json
 {
   "scripts": {
-    "dev": "webpack-dev-server"
+    "dev": "webpack server"
   }
 }
 ```
 
 ```js
-// ./webpack.config.js
+// webpack.config.js
 const path = require('path')
 
 module.exports = {
@@ -161,6 +161,40 @@ module.exports = {
 
 - **port**：指定项目部署端口
 - **static**：指定部署项目的静态资源文件夹
+
+#### 请求转发
+
+代码中使用相对路径进行请求的发送，在配置项中指定转发路径，类似 base url，实现开发与生产环境下请求地址的切换。
+
+```js
+// webpack.config.js
+const path = require('path')
+
+module.exports = {
+  devServer: {
+    proxy: {
+      '/api/getxxx': {
+        target: 'http://localhost:8001/',
+        pathRewrite: {
+          '^/api': '',
+        },
+        changeOrigin: true,
+      },
+    },
+  },
+}
+```
+
+- **proxy**：请求转发的配置项
+- **target**：转发地址，base url
+- **pathRewrite**：对请求地址进行重写，以上例子将删除 /api，最终请求地址为 http://localhost:8001/getxxx
+- **changeOrigin**：转换请求 Origin
+
+#### HotModuleReplacement
+
+webpack-dev-serve 4.0.0 以上默认开启该功能。修改代码后对修改部分的页面内容进行更新而不刷新整个页面，便于开发。
+
+Loader 底层常常封装该功能，实现不同类型文件修改后的热替换。
 
 ## Loader
 
@@ -181,7 +215,7 @@ npm install file-loader -D
 #### 配置
 
 ```js
-// ./webpack.config.js
+// webpack.config.js
 module.exports = {
   module: {
     rules: [
@@ -222,7 +256,7 @@ npm install url-loader -D
 #### 配置
 
 ```js
-// ./webpack.config.js
+// webpack.config.js
 module.exports = {
   module: {
     rules: [
@@ -269,17 +303,13 @@ npm install css-loader sytle-loader -D
 #### 配置
 
 ```js
-// ./webpack.config.js
+// webpack.config.js
 module.exports = {
   module: {
     rules: [
       {
         test: /.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ],
-        },
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
@@ -295,7 +325,7 @@ loader 执行顺序由下往上，因此需要将 css-loader 放在 style-loader
 启用 CSS 模块化，避免将 css 文件引入为全局样式导致污染。
 
 ```js
-// ./webpack.config.js
+// webpack.config.js
 module.exports = {
   module: {
     rules: [
@@ -306,11 +336,10 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              modules: true
-            }
-          }
+              modules: true,
+            },
+          },
         ],
-        },
       },
     ],
   },
@@ -318,8 +347,8 @@ module.exports = {
 ```
 
 ```js
-// ./index.js
-import styles from './index.js'
+// index.js
+import styles from './index.css'
 
 img.className += ` ${styles.myImg}`
 ```
@@ -344,19 +373,13 @@ npm install autoprefixer -D
 #### 配置
 
 ```js
-// ./webpack.config.js
+// webpack.config.js
 module.exports = {
   module: {
     rules: [
       {
         test: /.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'postcss-loader',
-          'sass-loader'
-        ],
-        },
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
     ],
   },
@@ -364,17 +387,65 @@ module.exports = {
 ```
 
 ```js
-// ./postcss.config.js
+// postcss.config.js
 module.export = {
   plugins: [require('autoprefixer')],
 }
 ```
 
 ```json
-// ./package.json
+// package.json
 {
   "browserslist": ["> 1%", "last 2 versions"]
 }
 ```
 
 - **browserslist**：兼容市场份额大于 1% 的浏览器的近 2 个版本，为其添加厂商前缀
+
+### babel
+
+#### 功能
+
+处理 ES6 语法的 JS 文件，将其转换为低版本浏览器可执行的 ES5 语法。
+
+#### 安装
+
+```bash
+npm install @babel/core @babel/preset-env babel-loader  -D
+npm install @babel/polyfill -D
+```
+
+#### 配置
+
+```js
+// webpack.config.js
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+      },
+    ],
+  },
+}
+```
+
+- **exclude**：排除 node_modules 文件夹下的文件，不需要使用 babel 转换。
+
+```json
+// .babelrc
+{
+  // 预设：bebel 一系列插件的集合
+  "presets": [
+    "@babel/preset-env",
+    // 配置 @babel/polyfill，用于实现 ES6 中 Promise, map 等特性
+    {
+      "useBuiltIns": "usage"
+    }
+  ]
+}
+```
+
+- **useBuiltIns**：usage 表示只实现代码中涉及到的 ES6 特性，减小打包结果的文件大小。
