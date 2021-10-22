@@ -1,9 +1,13 @@
 ---
-title: 第一个 Vue + SpringBoot 前后端分离项目开发第一阶段小结
+title: 第一个 Vue + Spring Boot 前后端分离项目开发第一阶段小结
 # date: 2021-03-31 21:25:53
 date: 2021-03-31
 tags:
-  - 工作
+  - 前端
+  - 后端
+  - 科研
+  - Vue
+  - Spring Boot
 categories:
   - 开发
 ---

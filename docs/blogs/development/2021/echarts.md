@@ -3,7 +3,8 @@ title: ECharts初体验及Footprint上线
 # date: 2021-04-09 16:05:59
 date: 2021-04-09
 tags:
-  - 工作
+  - 前端
+  - 科研
   - 博客
 categories:
   - 开发

@@ -2,6 +2,7 @@
 title: 制造设备实时数据传输架构方案
 date: 2021-10-07
 tags:
+  - 科研
   - 数据传输
   - MQTT
   - InfluxDB

@@ -3,8 +3,7 @@ title: 第一次参加 LeetCode 竞赛有感。
 # date: 2021-03-21 00:49:30
 date: 2021-03-21
 tags:
-  - 竞赛
-  - 双周赛
+  - 比赛
 categories:
   - LeetCode
 ---

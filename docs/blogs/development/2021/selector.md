@@ -3,7 +3,8 @@ title: CSS 选择器
 # date: 2021-05-11 10:35:32
 date: 2021-05-11
 tags:
-  - 选择器
+  - 前端
+  - CSS
 categories:
   - 开发
 ---
