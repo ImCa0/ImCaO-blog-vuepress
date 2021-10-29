@@ -99,7 +99,7 @@ module.exports = {
       {
         title: '叫我詹躲躲',
         desc: '岂能尽如人意，但求无愧于心',
-        logo: 'https://zhanhongzhu.top/avatar.jpg',
+        logo: 'https://images.dog.ceo/breeds/buhund-norwegian/hakon2.jpg',
         link: 'https://zhanhongzhu.top',
       },
       {
