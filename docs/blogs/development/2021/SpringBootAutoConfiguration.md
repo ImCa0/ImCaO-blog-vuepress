@@ -10,3 +10,5 @@ head_img: /img/2021/SpringBootAutoConfiguration.png
 ---
 
 ## @SpringBootApplication
+
+留个坑
