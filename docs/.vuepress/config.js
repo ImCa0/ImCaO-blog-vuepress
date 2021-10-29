@@ -1,6 +1,6 @@
 module.exports = {
   title: "ImCaO's Blog",
-  description: '当我下定决心奔向你时，不要推开我',
+  description: '花有重开日，人无再少年。',
   dest: 'dist',
   port: '7777',
   head: [
@@ -107,6 +107,12 @@ module.exports = {
         desc: 'study programs and record life',
         logo: 'https://photo.smallsunnyfox.com/images/blog/head.png',
         link: 'https://blog.smallsunnyfox.com',
+      },
+      {
+        title: "L1nSn0w's Blog",
+        desc: '我很菜，你忍一下！',
+        logo: 'https://linsnow.cn/img/avatar.jpg',
+        link: 'https://blog.linsnow.cn',
       },
     ],
     logo: '/logo.png',
