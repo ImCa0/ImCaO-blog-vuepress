@@ -1,6 +1,6 @@
 ---
 title: My Lesson Plan
-date: 1997-10-28
+publish: false
 ---
 
 ## Background information

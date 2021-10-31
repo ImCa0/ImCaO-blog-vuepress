@@ -38,7 +38,7 @@ module.exports = {
     valineConfig: {
       appId: 'OGHXv2eJzhMHNSVljRDkxDMJ-gzGzoHsz', // your appId
       appKey: 'DyiGvNwjtl295wF7cEtjnMEP', // your appKey
-      placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊！',
+      placeholder: '填写邮箱可以收到回复提醒哦~',
       recordIP: true,
     },
     nav: [
@@ -53,24 +53,29 @@ module.exports = {
         icon: 'reco-date',
       },
       {
-        text: 'Footprint',
-        link: '/blogs/footprint.html',
-        icon: 'fas fa-map-marker-alt',
-      },
-      {
         text: 'MessageBoard',
         link: '/blogs/MessageBorad.html',
         icon: 'reco-suggestion',
       },
       {
-        text: 'About',
-        link: '/blogs/about.html',
-        icon: 'reco-account',
+        text: 'FriendLinks',
+        link: '/blogs/FriendLinks.html',
+        icon: 'reco-api',
       },
       {
         text: 'Links',
         type: 'links',
         items: [
+          {
+            text: 'About',
+            link: '/blogs/about.html',
+            icon: 'reco-account',
+          },
+          {
+            text: 'Footprint',
+            link: '/blogs/footprint.html',
+            icon: 'fas fa-map-marker-alt',
+          },
           {
             text: 'Favorites',
             link: 'https://www.imcao.cn/favorites/',
@@ -95,26 +100,6 @@ module.exports = {
         text: 'Category',
       },
     },
-    friendLink: [
-      {
-        title: '叫我詹躲躲',
-        desc: '岂能尽如人意，但求无愧于心',
-        logo: 'https://images.dog.ceo/breeds/buhund-norwegian/hakon2.jpg',
-        link: 'https://zhanhongzhu.top',
-      },
-      {
-        title: 'latte and cat',
-        desc: 'study programs and record life',
-        logo: 'https://photo.smallsunnyfox.com/images/blog/head.png',
-        link: 'https://blog.smallsunnyfox.com',
-      },
-      {
-        title: "L1nSn0w's Blog",
-        desc: '我很菜，你忍一下！',
-        logo: 'https://linsnow.cn/img/avatar.jpg',
-        link: 'https://blog.linsnow.cn',
-      },
-    ],
     logo: '/logo.png',
     search: true,
     searchMaxSuggestions: 10,
