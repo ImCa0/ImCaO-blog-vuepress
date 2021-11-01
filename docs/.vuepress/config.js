@@ -3,6 +3,11 @@ module.exports = {
   description: '花有重开日，人无再少年。',
   dest: 'dist',
   port: '7777',
+  locales: {
+    '/': {
+      lang: 'zh-CN',
+    },
+  },
   head: [
     [
       'link',
@@ -45,22 +50,22 @@ module.exports = {
       {
         text: 'Home',
         link: '/',
-        icon: 'reco-home',
+        icon: 'fas fa-home',
       },
       {
         text: 'TimeLine',
         link: '/timeline/',
-        icon: 'reco-date',
+        icon: 'fas fa-clock',
       },
       {
         text: 'MessageBoard',
         link: '/blogs/MessageBorad.html',
-        icon: 'reco-suggestion',
+        icon: 'fas fa-feather-alt',
       },
       {
         text: 'FriendLinks',
         link: '/blogs/FriendLinks.html',
-        icon: 'reco-api',
+        icon: 'fas fa-user-friends',
       },
       {
         text: 'Links',
@@ -69,7 +74,7 @@ module.exports = {
           {
             text: 'About',
             link: '/blogs/about.html',
-            icon: 'reco-account',
+            icon: 'fas fa-user',
           },
           {
             text: 'Footprint',
@@ -79,15 +84,15 @@ module.exports = {
           {
             text: 'Favorites',
             link: 'https://www.imcao.cn/favorites/',
-            icon: 'reco-document',
+            icon: 'fas fa-bookmark',
           },
           {
-            text: 'Weibo',
-            icon: 'reco-weibo',
-            link: 'https://weibo.com/u/3533869340',
+            text: 'RSS',
+            link: 'https://www.imcao.cn/rss.xml',
+            icon: 'fas fa-rss',
           },
         ],
-        icon: 'reco-api',
+        icon: 'fas fa-link',
       },
     ],
     sidebar: {
@@ -95,6 +100,33 @@ module.exports = {
     },
     type: 'blog',
     blogConfig: {
+      socialLinks: [
+        {
+          icon: 'fab fa-github',
+          link: 'https://github.com/ImCa0',
+          color: '#3A3E42',
+        },
+        {
+          icon: 'fas fa-envelope',
+          link: 'mailto:imcao@imcao.cn',
+          color: '#3498DB',
+        },
+        {
+          icon: 'fab fa-weibo',
+          link: 'https://weibo.com/u/3533869340',
+          color: '#E15B64',
+        },
+        {
+          icon: 'fab fa-steam',
+          link: 'https://steamcommunity.com/id/ImCaO/',
+          color: '#476292',
+        },
+        {
+          icon: 'fas fa-subway',
+          link: 'https://travellings.link',
+          color: '#3A3E42',
+        },
+      ],
       category: {
         location: 2,
         text: 'Category',
@@ -117,5 +149,13 @@ module.exports = {
   markdown: {
     lineNumbers: true,
   },
-  plugins: [['@vuepress/nprogress']],
+  plugins: [
+    ['@vuepress/nprogress'],
+    [
+      '@vuepress-reco/vuepress-plugin-rss',
+      {
+        site_url: 'https://www.imcao.cn',
+      },
+    ],
+  ],
 }
