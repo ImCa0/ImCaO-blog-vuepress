@@ -8,20 +8,4 @@ categories:
 abs_img: /img/2021/whatimiss.jpg
 ---
 
-<iframe src="//player.bilibili.com/player.html?aid=806315313&bvid=BV1Z34y1m7jC&cid=430097023&page=1" scrolling="no" border="0" frameborder="no" width="100%" framespacing="0" allowfullscreen="true"> </iframe>
-
-<style>
-iframe {
-  height: 480px
-}
-@media (max-width: 768px) {
-  iframe {
-    height: 300px
-  }
-}
-@media (max-width: 480px) {
-  iframe {
-    height: 250px
-  }
-}
-</style>
+<bilibili src="//player.bilibili.com/player.html?aid=806315313&bvid=BV1Z34y1m7jC&cid=430097023&page=1"/>
