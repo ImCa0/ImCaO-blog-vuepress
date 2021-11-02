@@ -8,4 +8,4 @@ categories:
 abs_img: /img/2021/whatimiss.jpg
 ---
 
-<bilibili src="//player.bilibili.com/player.html?aid=806315313&bvid=BV1Z34y1m7jC&cid=430097023&page=1"/>
+<bilibili src="https://player.bilibili.com/player.html?aid=806315313&bvid=BV1Z34y1m7jC&cid=430097023&page=1"/>
