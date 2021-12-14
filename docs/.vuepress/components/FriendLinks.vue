@@ -51,8 +51,8 @@ export default {
         {
           title: "XIAOMING'S BLOG",
           desc: '记录生活点滴，谱写精彩生活！',
-          logo: 'https://le360.cc/usr/uploads/logo.jpg',
-          link: 'https://le360.cc',
+          logo: 'https://pic.vimin.cc/logo.png',
+          link: 'https://vimin.cc',
         },
         {
           title: "鱼跃此时海",

@@ -10,12 +10,12 @@ abs_img: /img/2021/LeetCode.png
 ---
 
 :::tip
-本文转自 [LeetCode 200. 岛屿数量 题解](https://leetcode-cn.com/problems/number-of-islands/solution/dao-yu-lei-wen-ti-de-tong-yong-jie-fa-dfs-bian-li-/)，作者为 [nettee](https://leetcode-cn.com/u/nettee/)。
+本文转自 [LeetCode 200.岛屿数量 题解](https://leetcode-cn.com/problems/number-of-islands/solution/dao-yu-lei-wen-ti-de-tong-yong-jie-fa-dfs-bian-li-/)，作者为 [nettee](https://leetcode-cn.com/u/nettee/)。
 :::
 
-在 LeetCode 中，「岛屿问题」是一个系列系列问题，比如：
+在 LeetCode 中，「岛屿问题」是一个系列问题，比如：
 
-- [L200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/) （Easy）
+- [200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/) （Easy）
 - [463. 岛屿的周长](https://leetcode-cn.com/problems/island-perimeter/) （Easy）
 - [695. 岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/) （Medium）
 - [827. 最大人工岛](https://leetcode-cn.com/problems/making-a-large-island/) （Hard）
