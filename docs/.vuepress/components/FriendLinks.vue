@@ -21,7 +21,7 @@ export default {
         {
           title: '叫我詹躲躲',
           desc: '岂能尽如人意，但求无愧于心',
-          logo: '	https://zhanhongzhu.top/avatar.jpg',
+          logo: 'https://zhanhongzhu.top/avatar.jpg',
           link: 'https://zhanhongzhu.top',
         },
         {
@@ -71,6 +71,12 @@ export default {
           desc: '愿多年以后，我可以酌一杯清酒，烂醉如泥，梦中回到我们的曾经。',
           logo: 'https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg',
           link: 'https://colsrch.cn',
+        },
+        {
+          title: 'HuRan Blog',
+          desc: '长风破浪会有时，直挂云帆济沧海',
+          logo: 'https://img.huran.xyz/avatar.png',
+          link: 'https://blog.huran.xyz',
         }
       ]
     }
