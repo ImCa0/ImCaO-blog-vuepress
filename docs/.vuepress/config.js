@@ -47,6 +47,7 @@ module.exports = {
       recordIP: true,
       emojiCDN: '//i0.hdslb.com/bfs/emote/',
       emojiMaps: {
+        波吉: '50cb2606c285614f5786bd387c4f00dff923c82b.png',
         藏狐: 'ba0937ef6f3ccca85e2e0047e6263f3b4da37201.png',
         doge: '3087d273a78ccaff4bb1e9972e2ba2a7583c9f11.png',
         微笑: '685612eadc33f6bc233776c6241813385844f182.png',
