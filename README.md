@@ -1,6 +1,6 @@
 # ImCaO's Blog
 
-网址：[ImCaO's Blog](https://www.imcao.cn)
+网址：~[ImCaO's Blog](https://www.imcao.cn)~ （博客主题已变更为 hexo-theme-butterfly）
 
 博客工具：[VuePress](https://vuepress.vuejs.org/zh/)
 
